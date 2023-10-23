@@ -25,10 +25,12 @@ public class author {
     }
 
     public char getGender() {
-        this.gender = gender;
+
+        return this.gender;
     }
 
     public String toString() {
-        return String.format(name, gender, email);
+        String beskrivning = name + " (" + gender + ") " + email;
+        return beskrivning;
     }
 }
